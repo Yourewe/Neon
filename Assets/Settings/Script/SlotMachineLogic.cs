@@ -20,11 +20,8 @@ public class SlotMachineLogic : MonoBehaviour
 
     void Start()
     {
-        // Initialize the empty 2D array (grid)
         slotGrid = new UnitSymbol[columns, rows];
-
-        // Spin the machine immediately when the game starts just to test
-        SpinLogic();
+        // SpinLogic();  <-- We removed this so it waits for the button!
     }
 
     public void SpinLogic()
